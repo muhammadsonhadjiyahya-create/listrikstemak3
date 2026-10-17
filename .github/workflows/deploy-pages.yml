@@ -22,8 +22,10 @@ jobs:
     steps:
       - name: Ambil file website
         uses: actions/checkout@v4
-      - name: Siapkan GitHub Pages
+      - name: Aktifkan dan siapkan GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Kemas website
         uses: actions/upload-pages-artifact@v3
         with:
